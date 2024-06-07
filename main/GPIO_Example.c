@@ -13,7 +13,7 @@ void app_main(void)
     while (true)
     {
         /* code */
-        if(1 == gpio_get_level(GPIO_NUM_22))
+        if(0 == gpio_get_level(GPIO_NUM_22))
         {
            gpio_set_level(GPIO_NUM_26, 1);
         }
