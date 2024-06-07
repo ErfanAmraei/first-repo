@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Setup Environment') {
+        stage('Setup_Environment') {
             steps {
                 bat 'call F:\\ESP-Examples\\first-launch\\batch_directory\\setup_env.bat'
             }
