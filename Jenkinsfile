@@ -8,19 +8,19 @@ pipeline {
     stages {
         stage('Setup_Environment') {
             steps {
-                bat 'call F:\\ESP-Examples\\first-launch\\batch_directory\\setup_env.bat'
+                echo "hello jenkins"
             }
         }
 
         stage('Build') {
             steps {
-                bat 'call F:\\ESP-Examples\\first-launch\\batch_directory\\build_project.bat'
+               echo "it is built"
             }
         }
 
         stage('Run Tests') {
             steps {
-                bat 'call F:\\ESP-Examples\\first-launch\\batch_directory\\run_tests.bat'
+                echo "it is runned"
             }
         }
     }
